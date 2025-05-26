@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { Item, ItemsResponse, ItemResponse } from '@base-project/shared';
+import { Item, ItemsResponse, ItemResponse } from '@crackerpro/shared';
 import { databaseService } from '../services/database';
 
 const router = Router();
@@ -8,26 +8,26 @@ const router = Router();
 const mockItems: Item[] = [
   {
     id: '1',
-    name: 'Laptop',
-    type: 'Electronics',
+    name: 'Cookies',
+    type: 'Baked goods',
     amount: 1200
   },
   {
     id: '2',
     name: 'Coffee Beans',
-    type: 'Food',
+    type: 'Dry goods',
     amount: 25
   },
   {
     id: '3',
-    name: 'Office Chair',
-    type: 'Furniture',
+    name: 'Salty Crackers',
+    type: 'crackers',
     amount: 350
   },
   {
     id: '4',
-    name: 'Notebook',
-    type: 'Stationery',
+    name: 'Chocolate Chip Cookies',
+    type: 'Baked goods',
     amount: 15
   }
 ];

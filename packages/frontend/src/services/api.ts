@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Item, ItemsResponse, ItemResponse } from '@base-project/shared';
+import { Item, ItemsResponse, ItemResponse } from '@crackerpro/shared';
 
 const API_URL = process.env.REACT_APP_API_URL;
 

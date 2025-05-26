@@ -1,4 +1,4 @@
-# 🚀 Project template - Production Deployment Guide
+# 🚀 Crackerpro - Production Deployment Guide
 
 A full-stack TypeScript monorepo with Express backend, React frontend, and Supabase database.
 
@@ -12,7 +12,7 @@ A full-stack TypeScript monorepo with Express backend, React frontend, and Supab
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd base-project
+cd crackerpro
 
 # Install all dependencies
 npm run install:all
@@ -51,7 +51,7 @@ npm run dev
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Frontend      │    │   Backend       │    │   Database      │
-│   (Netlify)      │───▶│   (Render)      │───▶│   (Supabase)    │
+│   (Netlify)     │───▶│   (Render)      │───▶│   (Supabase)    │
 │   React + TS    │    │   Express + TS  │    │   PostgreSQL    │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
@@ -80,7 +80,7 @@ Before starting, ensure you have accounts on:
 
 1. **Sign up/Login** to [Supabase](https://supabase.com)
 2. **Create New Project**
-   - Project name: `project-template-db` (or your choice)
+   - Project name: `crackerpro-db` (or your choice)
    - Database password: Generate and **save securely**
    - Region: Choose closest to your users
    - Click "Create new project"
@@ -151,10 +151,10 @@ git push origin main
 3. **Create New Web Service**
    - Click "New +" → "Web Service"
    - Connect your repository
-   - Select your `project-template` repository
+   - Select your `crackerpro` repository
 
 4. **Configure the service:**
-   - **Name**: `project-template-backend`
+   - **Name**: `crackerpro-backend`
    - **Region**: Oregon (or closest to your users)
    - **Branch**: `main`
    - **Root Directory**: `packages/backend`
@@ -196,10 +196,10 @@ In the Render dashboard, go to **Environment** tab and add:
 2. **Import Project**
    - Click "Add New..." → "Project"
    - Import from GitHub
-   - Select your `project-template` repository
+   - Select your `crackerpro` repository
 
 3. **Configure the project:**
-   - **Project Name**: `project-template-frontend`
+   - **Project Name**: `crackerpro-frontend`
    - **Framework Preset**: Create React App
    - **Base Directory**: `packages/frontend`
    - **Build Command**: 

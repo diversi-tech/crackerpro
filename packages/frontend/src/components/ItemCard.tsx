@@ -1,5 +1,5 @@
 import React from 'react';
-import { Item } from '@base-project/shared';
+import { Item } from '@crackerpro/shared';
 
 interface ItemCardProps {
   item: Item;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Item } from '@base-project/shared';
+import { Item } from '@crackerpro/shared';
 import { apiService } from './services/api';
 import ItemCard from './components/ItemCard';
 import './App.css';
@@ -54,7 +54,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Base Project</h1>
+        <h1>CrackerPro</h1>
         <div style={{ fontSize: '14px', opacity: 0.8 }}>
           Backend Status: <span style={{ 
             color: healthStatus === 'healthy' ? 'lightgreen' : 'salmon',

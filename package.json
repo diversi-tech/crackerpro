@@ -1,7 +1,7 @@
 {
-  "name": "base-project",
+  "name": "crackerpro",
   "version": "1.0.0",
-  "description": "Base project with backend, frontend, and shared packages",
+  "description": "Crackerpro with backend, frontend, and shared packages",
   "private": true,
   "workspaces": [
     "packages/*"
