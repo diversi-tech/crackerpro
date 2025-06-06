@@ -1,6 +1,8 @@
 import dotenv from 'dotenv';
+import path from 'path'
 // Load environment variables
-dotenv.config();
+// dotenv.config();
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 import express from 'express';
 import cors from 'cors';
@@ -29,7 +31,7 @@ app.listen(PORT, async () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📝 Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`🌐 CORS enabled for: ${CORS_ORIGIN}`);
-  
+
   // Initialize database with sample data if using Supabase
   if (process.env.SUPABASE_URL && process.env.SUPABASE_ANON_KEY) {
     console.log('🗄️ Initializing database...');
@@ -37,7 +39,7 @@ app.listen(PORT, async () => {
       databaseService.canInitialize();
       try {
         await databaseService.initializeSampleData();
-        console.log('✅ Database initialized successfully');  
+        console.log('✅ Database initialized successfully');
       } catch (error) {
         console.error('❌ Database sample-data initialization failed');
       }

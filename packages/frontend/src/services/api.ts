@@ -23,12 +23,14 @@ apiClient.interceptors.response.use(
 export const apiService = {
   // Health check
   checkHealth: async () => {
+    debugger
     const response = await apiClient.get('/health');
     return response.data;
   },
 
   // Get all items
   getItems: async (): Promise<Item[]> => {
+    debugger
     const response = await apiClient.get<ItemsResponse>('/items');
     if (response.data.success && response.data.data) {
       return response.data.data;

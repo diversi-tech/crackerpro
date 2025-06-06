@@ -12,11 +12,13 @@ function App() {
   const [healthStatus, setHealthStatus] = useState<string>('checking...');
 
   useEffect(() => {
+    debugger
     loadItems();
     checkHealth();
   }, []);
 
   const loadItems = async () => {
+    debugger
     try {
       setLoading(true);
       setError(null);
@@ -30,6 +32,7 @@ function App() {
   };
 
   const checkHealth = async () => {
+    debugger
     try {
       const health = await apiService.checkHealth();
       setHealthStatus(health.success ? 'healthy' : 'unhealthy');
